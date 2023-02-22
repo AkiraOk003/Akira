@@ -1,0 +1,15 @@
+sales = [
+    ['Московская область', 105820, 112180],
+    ['Ленинградская область', 85899, 91021],
+    ['Самарская область', 35010, 32001],
+    ['Ростовская область', 37011, 39595]
+]
+
+for money in sales:
+    year_sum = money[1] + money[2]
+    money.append(year_sum)
+    
+for money in sales:
+    for elem in money:
+        print(f'{elem:<25}', end='')
+    print()
